@@ -1,5 +1,5 @@
 import { ToastrService } from 'ngx-toastr';
-import { AuthService } from "./../../service/auth.service";
+import { AuthService } from "../../services/auth.service";
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 
@@ -16,7 +16,7 @@ export class NavComponent implements OnInit {
     ) {}
 
   ngOnInit(): void {
-    this.router.navigate(["home"]);
+    this.router.navigate(["tecnicos"]);
   }
 
   logout() {

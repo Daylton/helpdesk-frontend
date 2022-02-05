@@ -1,5 +1,5 @@
-import { API_CONFIG } from "./../config/api.config";
-import { Credenciais } from "./../models/credenciais";
+import { API_CONFIG } from "../config/api.config";
+import { Credenciais } from "../models/credenciais";
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { JwtHelperService } from "@auth0/angular-jwt";
