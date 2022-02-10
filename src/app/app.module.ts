@@ -37,6 +37,7 @@ import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecn
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-list.component';
 import { MatSortModule } from '@angular/material/sort';
+import { ChamadoCreateComponent } from './components/chamado/chamado-create/chamado-create.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { MatSortModule } from '@angular/material/sort';
     ClienteListComponent,
     ClienteUpdateComponent,
     ClienteDeleteComponent,
-    ChamadoListComponent
+    ChamadoListComponent,
+    ChamadoCreateComponent
   ],
   imports: [
     BrowserModule,

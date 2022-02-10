@@ -81,10 +81,11 @@ export class ChamadoListComponent implements OnInit {
     this.DATA.forEach((element) => {
       if (element.status == status) {
         list.push(element);
-        console.log(element.status);
+        // console.log(element.status);
+        // list.pop();
       }
     });
-    this.FILTERED_DATA = list;
+    // this.FILTERED_DATA = list;
     this.dataSource = new MatTableDataSource<Chamado>(list);
     this.dataSource.paginator = this.paginator;
   }
