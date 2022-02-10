@@ -36,6 +36,7 @@ import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-
 import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-list.component';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -78,6 +79,7 @@ import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-
     MatIconModule,
     MatListModule,
     MatCardModule,
+    MatSortModule,
     ToastrModule.forRoot({
       timeOut: 4000,
       closeButton: true,
