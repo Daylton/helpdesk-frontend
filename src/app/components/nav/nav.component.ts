@@ -1,4 +1,4 @@
-import { ToastrService } from 'ngx-toastr';
+import { ToastrService } from "ngx-toastr";
 import { AuthService } from "../../services/auth.service";
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
@@ -10,18 +10,20 @@ import { Router } from "@angular/router";
 })
 export class NavComponent implements OnInit {
   constructor(
-    private router: Router, 
+    private router: Router,
     private authService: AuthService,
-    private toastr: ToastrService
-    ) {}
+    private toastr: ToastrService,
+  ) {}
 
   ngOnInit(): void {
-    this.router.navigate(["chamados/create"]);
+    this.router.navigate(["chamados/update/1"]);
   }
 
   logout() {
     this.router.navigate(["login"]);
     this.authService.logout();
-    this.toastr.info('Logout realizado com sucesso', 'Logout', {timeOut: 7000});
+    this.toastr.info("Logout realizado com sucesso", "Logout", {
+      timeOut: 7000,
+    });
   }
 }
