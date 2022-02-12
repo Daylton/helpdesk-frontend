@@ -9,7 +9,8 @@
   width: 100%;
 }
 
-h1, img {
+h1,
+img {
   text-align: center;
 }
 
@@ -26,17 +27,17 @@ img {
   width: 49%;
 }
 
-.descricao {
+.observacoes {
   min-height: 6rem;
   max-height: 10rem;
 }
 
 button {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 p {
   text-align: center;
-  opacity: .5;
+  opacity: 0.5;
   margin-top: 2rem;
 }

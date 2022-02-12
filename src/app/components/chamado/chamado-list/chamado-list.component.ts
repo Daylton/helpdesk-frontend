@@ -34,7 +34,6 @@ export class ChamadoListComponent implements OnInit {
 
   ngOnInit(): void {
     this.findAll();
-    // this.ngAfterViewInit();
   }
 
   findAll(): void {
