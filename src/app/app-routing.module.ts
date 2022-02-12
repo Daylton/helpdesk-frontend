@@ -15,6 +15,7 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { HomeComponent } from "./components/home/home.component";
 import { AuthGuard } from "./auth/auth.guard";
+import { ChamadoReadComponent } from "./components/chamado/chamado-read/chamado-read.component";
 
 const routes: Routes = [
   { path: "login", component: LoginComponent },
@@ -38,6 +39,7 @@ const routes: Routes = [
       { path: "chamados", component: ChamadoListComponent },
       { path: "chamados/create", component: ChamadoCreateComponent },
       { path: "chamados/update/:id", component: ChamadoUpdateComponent },
+      { path: "chamados/read/:id", component: ChamadoReadComponent },
     ],
   },
 ];
